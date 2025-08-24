@@ -114,5 +114,17 @@
     const nameFromUrl = params.get('name');
     if (nameFromUrl) { document.getElementById('guest-name').textContent = nameFromUrl; }
   </script>
+
+  <script type="application/ld+json">
+        {
+          "@context":"https://schema.org",
+          "@type":"Event",
+          "name":"Хүндэтгэлийн хүлээн авалт",
+          "startDate":"2025-09-05T17:00:00+08:00",
+          "location":{"@type":"Place","name":"Evento Ballroom",
+                     "geo":{"@type":"GeoCoordinates","latitude":47.9179483,"longitude":106.8757356}},
+          "eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode"
+        }
+</script>
 </body>
 </html>

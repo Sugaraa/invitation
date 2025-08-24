@@ -108,8 +108,12 @@
       <footer>© 2025 Б.Дэлгэр</footer>
     </div>
   </main>
-
-
+<script>
+     // URL-ээр нэр солих: ?name=Таны+Нэр
+        const params = new URLSearchParams(location.search);
+    const nameFromUrl = params.get('name');
+    if (nameFromUrl) { document.getElementById('guest-name').textContent = nameFromUrl;
+</script>
   <script type="application/ld+json">
         {
           "@context":"https://schema.org",
@@ -119,10 +123,7 @@
           "location":{"@type":"Place","name":"Evento Ballroom",
                      "geo":{"@type":"GeoCoordinates","latitude":47.9179483,"longitude":106.8757356}},
           "eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode"
-    // URL-ээр нэр солих: ?name=Таны+Нэр
-        const params = new URLSearchParams(location.search);
-    const nameFromUrl = params.get('name');
-    if (nameFromUrl) { document.getElementById('guest-name').textContent = nameFromUrl; }
+  }
         }
 </script>
 </body>
